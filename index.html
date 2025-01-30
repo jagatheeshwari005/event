@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manual Scroll Image Slider</title>
+    <link rel="stylesheet" href="styles.css">  
+    <style>
+        
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 15px;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: yellow;
+        }
+
+        .carousel-container {
+            width: 100%;
+            height: 90vh; 
+            overflow-x: scroll; 
+            display: flex;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            border-bottom: 4px solid #333;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 90vh;
+            scroll-snap-align: start;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Adding images */
+        .slide1 { background-image: url('th.jpg'); }
+        .slide2 { background-image: url('img2.jpg'); }
+        .slide3 { background-image: url('img3.jpg'); }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    
+    <div class="logo">Jashora Hub</div>
+    
+  
+    <div class="nav-links">
+        <a href="#">HOME</a>
+        <a href="#about-us">ABOUT US</a>
+        <a href="services.html">SERVICES</a>
+        <a href="#events">GALLERY</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+</div>
+
+<div class="carousel-container">
+    <div class="carousel-slide slide1"></div>
+    <div class="carousel-slide slide2"></div>
+    <div class="carousel-slide slide3"></div>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 Xquisite Events. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

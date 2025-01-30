@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/demo.html -->
+<html lang="ta"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manual Scroll Image Slider</title>
+    <link rel="stylesheet" href="file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/styles.css">  <!-- External CSS -->
+    <style>
+        /* Navigation Bar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .navbar a:hover {
+            color: yellow;
+        }
+
+        /* Carousel Container */
+        .carousel-container {
+            width: 100%;
+            height: 90vh; /* Full height */
+            overflow-x: scroll; /* Horizontal scrolling */
+            display: flex;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            border-bottom: 4px solid #333;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 90vh;
+            scroll-snap-align: start;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Adding images */
+        .slide1 { background-image: url('img1.jpg'); }
+        .slide2 { background-image: url('img2.jpg'); }
+        .slide3 { background-image: url('img3.jpg'); }
+
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/demo.html#">HOME</a>
+    <a href="file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/demo.html#about-us">ABOUT US</a>
+    <a href="file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/services.html">SERVICES</a>
+    <a href="file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/demo.html#events">EVENTS</a>
+    <a href="file:///C:/Users/DELL/OneDrive/Desktop/jaga%20web/demo.html#contact">CONTACT</a>
+</div>
+
+<!-- Manual Scroll Carousel -->
+<div class="carousel-container">
+    <div class="carousel-slide slide1"></div>
+    <div class="carousel-slide slide2"></div>
+    <div class="carousel-slide slide3"></div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 Xquisite Events. All Rights Reserved.</p>
+</footer>
+
+
+
+</body></html>

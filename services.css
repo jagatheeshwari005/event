@@ -1,0 +1,36 @@
+
+body {
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #f0ad4e !important;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    background: #111;
+}
